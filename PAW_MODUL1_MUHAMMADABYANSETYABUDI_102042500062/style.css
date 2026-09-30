@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #222222;
+    padding: 15px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #7e7e7e;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 20px 0;
+}
+
+.hero h1 {
+    font-size: 32px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: white;
+    color: #222222;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+.catalog-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.catalog-head h2 {
+    font-size: 24px;
+}
+
+.total {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.card {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    margin: 8px 0;
+}
+
+.kategori {
+    font-size: 14px;
+    color:  rgb(81, 81, 80);
+}
+
+.badge-diskon {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    margin-left: 5px;
+}
+
+.harga-wrap {
+    margin-bottom: 10px;
+}
+
+.harga-coret {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.harga {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.harga.promo {
+    color: red;
+}
+
+.stok-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.status {
+    font-size: 13px;
+    padding: 2px 8px;
+    color: white;
+}
+.deskripsi {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.status.ada {
+    background-color: green;
+}
+
+.status.habis {
+    background-color: red;
+}
+
+.btn-beli {
+    width: 100%;
+    padding: 10px;
+    background-color: #222222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-beli:disabled {
+    background-color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .catalog-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: auto;
+    }
+}
